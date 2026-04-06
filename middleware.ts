@@ -11,7 +11,8 @@ export function middleware(request: NextRequest) {
     path === "/resetpassword";
 
   const token = request.cookies.get("token")?.value || "";
-  if (token && isPublicPath) {
+
+  if (token && isPublicPath && path !== "/verifyemail") {
     return NextResponse.redirect(new URL("/", request.url));
   }
   if (!token && !isPublicPath) {
