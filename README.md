@@ -1,10 +1,10 @@
-# Next.js Authentication Starter
+﻿# Next.js Authentication Starter
 
-A complete, professional authentication system built with **Next.js**,**MongoDB**, and **TypeScript**. This project serves as a robust foundation for building full-stack applications with secure user authentication, identity management, and protected routes.
+A complete, professional authentication system built with **Next.js**, **MongoDB**, and **TypeScript**. This project serves as a robust foundation for building full-stack applications with secure user authentication, identity management, and protected routes.
 
 ---
 
-## ?? Features
+## 🚀 Features
 
 - **User Authentication:** Secure Sign Up, Login, and Logout functionality.
 - **Stateless Sessions:** JWT (JSON Web Tokens) with HTTP-only cookies for secure session management.
@@ -16,7 +16,7 @@ A complete, professional authentication system built with **Next.js**,**MongoDB*
 - **API Routes:** Comprehensive Next.js backend API routes to handle authentication tasks.
 - **Notifications:** Beautiful toast notifications using `react-hot-toast`.
 
-## ??? Tech Stack
+## 🛠️ Tech Stack
 
 - **Framework:** [Next.js](https://nextjs.org/) (App Router, Server Actions, API Routes)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
@@ -25,24 +25,24 @@ A complete, professional authentication system built with **Next.js**,**MongoDB*
 - **Email Delivery:** [Nodemailer](https://nodemailer.com/) & [Mailtrap](https://mailtrap.io/)
 - **Styling:** CSS & [Tailwind CSS](https://tailwindcss.com/)
 
-## ?? Project Structure
+## 📂 Project Structure
 
 ```text
-+-- app/
-�   +-- api/                   # Backend API routes (login, signup, verify email, etc.)
-�   +-- login/                 # Login page
-�   +-- signup/                # Signup page
-�   +-- profile/               # Protected user profile pages
-�   +-- verifyemail/           # Email verification handling page
-�   +-- resetpassword/         # Password reset page
-�   +-- forgotpassword/        # Trigger password reset page
-+-- dbConfig/                  # MongoDB connection setup
-+-- helper/                    # Utility functions (Mailer, Token extraction)
-+-- models/                    # Mongoose database models (User schema)
-+-- middleware.ts              # Next.js Middleware for protecting routes
+├── app/
+│   ├── api/                   # Backend API routes (login, signup, verify email, etc.)
+│   ├── login/                 # Login page
+│   ├── signup/                # Signup page
+│   ├── profile/               # Protected user profile pages
+│   ├── verifyemail/           # Email verification handling page
+│   ├── resetpassword/         # Password reset page
+│   └── forgotpassword/        # Trigger password reset page
+├── dbConfig/                  # MongoDB connection setup
+├── helper/                    # Utility functions (Mailer, Token extraction)
+├── models/                    # Mongoose database models (User schema)
+└── middleware.ts              # Next.js Middleware for protecting routes
 ```
 
-## ?? Getting Started
+## ⚙️ Getting Started
 
 ### Prerequisites
 
@@ -83,7 +83,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## ?? Security Practices Implemented
+## 🔒 Security Practices Implemented
 
 - **HTTP-Only Cookies:** JWTs are stored in secure HTTP-only cookies to prevent XSS attacks.
 - **Password Hashing:** Passwords are never stored in plaintext. They are salted and hashed using `bcryptjs`.
@@ -91,6 +91,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **URL Encoding:** Sensitive tokens passed in URLs are properly URI encoded.
 - **Route Protection:** Next.js Middleware ensures that unauthenticated users cannot access protected pages like `/profile`, and authenticated users cannot access `/login` or `/signup`.
 
-## ?? Contributing
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
